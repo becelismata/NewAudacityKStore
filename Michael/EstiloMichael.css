@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Establece el color de fondo del cuerpo en azul. Establece el tipo de letra a Rubik */
+
+body {
+  /*background-color: #006eff;*/
+  background-image: url(bgmj.png);
+  background-size: cover;
+  background-position: center;
+  font-family: 'rubik', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 150px;
+}
+
+/* Alinea el texto del encabezado al centro. */
+ 
+h1 {
+  text-align: center;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+  width: 90%;
+  margin: 90px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+
+.acordeon .contenedor {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+  
+  .acordeon .etiqueta {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+
+.acordeon .etiqueta::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+  
+  .acordeon .contenido {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Añade una línea horizontal entre los contenidos */
+  
+  .acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+  /* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+.acordeon .contenedor.activa .contenido {
+    height: 100%
+  }
+  
+  /* Cambia de signo positivo a negativo una vez activado */
+  
+  .acordeon .contenedor.activa .etiqueta::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+  /*
+  .slider{width: 100%;
+    margin: auto;
+    overflow: hidden;
+    }
+    
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 300%;
+    
+        animation: cambio 20s infinite;
+        
+        animation-timing-function: ease-in;
+        
+    }
+    
+    .slider li{
+        width: 90%;
+        list-style: none;
+    }
+
+    @keyframes cambio{
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+    
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+    
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+    
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    
+    }
+*/
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    #button{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        text-align: center;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+   
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Michael Jackson</h1>
+    </header>
+
+    <section id="biography">
+        <h2>Biografía</h2>
+        <p>Michael Joseph Jackson (29 de agosto de 1958 - 25 de junio de 2009) fue un cantante, compositor y bailarín estadounidense. Conocido como el "Rey del Pop", Jackson es considerado una de las figuras más famosas y exitosas de la historia del entretenimiento.</p>
+        <!-- Agrega más información sobre la biografía según sea necesario -->
+    </section>
+
+    <section id="discography">
+        <h2>Discografía</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Álbum</th>
+                    <th>Año</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Off The Wall</td>
+                    <td>1982</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b2737027294551db4fda68b5ddac" width="100" alt="Off The Wall"></td>
+                </tr>
+                <tr>
+                    <td>Thriller</td>
+                    <td>1982</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97" width="100" alt="Thriller"></td>
+                </tr>
+                <tr>
+                    <td>Bad</td>
+                    <td>1987</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b27362e97ae5072de10850578af5" width="100" alt="Bad"></td>
+                </tr>
+                <tr>
+                    <td>Dangerous</td>
+                    <td>1991</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b2733b9f8b18cc685e1502128aa8" width="100" alt="Dangerous"></td>
+                </tr>
+                <tr>
+                    <td>HIStory</td>
+                    <td>1995</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b273d0593178c6c2594693ee34b7" width="100" alt="HIStory"></td>
+                </tr>
+                <tr>
+                    <td>Blood On The Dance Floor</td>
+                    <td>1997</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b273983d03d4dee6600fb095a9e6" width="100" alt="Blood On The Dance Floor"></td>
+                </tr>
+                <tr>
+                    <td>Invicible</td>
+                    <td>2001</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b273463de2351439f6532ff0dfbd" width="100" alt="Invicible"></td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>2010</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d0000b273a7ef06d1e0bad6fe2ff028f6" width="100" alt="Michael"></td>
+                </tr>
+                <tr>
+                    <td>XSCAPE</td>
+                    <td>2014</td>
+                    <td><img src="https://i.scdn.co/image/ab67616d00001e0284dc5d0b8018238584522562" width="100" alt="XSCAPE"></td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3fMbdgg4jU18AjLCKBhRSm?utm_source=generator" 
+        width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe> 
+        <br><br><br><br>
+        <h1>PAISES DONDE MAS SE ESCUCHA</h1>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script class="root">
+            google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Chile', 545991],
+          ['Mexico', 599051],
+          ['United Kingdom', 539526],
+          ['Brazil', 523420],
+          ['Australia', 460532],
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+        </script>
+       <div id="regions_div" style="width: 900px; height: 500px;"></div>
+   
+    </section>
+
+</body>
+
+</html>

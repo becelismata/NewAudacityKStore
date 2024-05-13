@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audacity Store</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Audacity k-Store</h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#iconos">Nuestros iconos</a></li>
+                <li><a href="#descripcion">Nosotros</a></li>         
+            <li><a href="#ubicacion">Nuestra Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+<ul>
+    <li><img src="carrusel1.png" width="100%"></li>
+    <li><img src="carrusel2.png" width="100%"></li>
+    <li><img src="carrusel3.png" width="100%"></li>
+    <li><img src="carrusel4.png" width="100%"></li>
+    <li><img src="carrusel5.png" width="100%"></li>
+</ul>
+</div>
+    
+
+    <section id="iconos">
+        <h2>Nuestros Iconos</h2>
+        <table>
+            <tr>
+                <td>
+                    <img id="ICONImage" src="INDEXMJ.png"  onclick="redirigir('Michael/Michael2.html')">
+                </td>
+                <td>
+                    <img id="ICONImage" src="TSINDEX.png" onclick="redirigir('TAYLOR/TS.html')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="ICONImage" src="INDEXEXO.png"  onclick="redirigir('EXO/EXO2.html')">
+                </td>
+                <td>
+                    <img id="ICONImage" src="TWICEINDEX.png"  onclick="alert('Proximamente')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="ICONImage" src="BTSINDEX.png"  onclick="alert('Proximamente')">
+                </td>
+                <td>
+                    <img id="ICONImage" src="IVEINDEX.png"  onclick="redirigir('IVE/IVE.html')">
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="descripcion">
+        <h2>¿Qué es Audacity Store?</h2>
+        <p>Bienvenido a Audacity K-Store, el lugar donde la música cobra vida. Explora nuestra colección exclusiva de productos inspirados en los iconos musicales más grandes de todos los tiempos. Desde Taylor Swift hasta Michael Jackson, cada artículo refleja la esencia y la magia de la música que amamos.</p>
+    </section>
+    <section id="ubicacion">
+        <h2>Encuéntranos</h2>
+        <p>Descubre Audacity Store en línea y súmate a la experiencia musical desde cualquier lugar del mundo. ¡Somos accesibles para todos!</p>
+        <iframe src="Https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.23557678815914!2d-97.06830673666835!3d20.060106588319805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db03c1e295565d%3A0x9dfbeb955414c89e!2sPlaza%20D&#39;Lux%20%7C%20Mirador!5e0!3m2!1ses-419!2smx!4v1709389776661!5m2!1ses-419!2smx" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <br><br><br><br><br><br><br><br>
+
+   
+    
+
+    <script>
+        // Función para redirigir a la página correspondiente al hacer clic en la imagen
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+
+</body>
+
+</html>
